@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 
+
 export const useCurrencyConverter = () => {
     const [data, setHistory] = useState(null);
     const [rates, setRates] = useState(null);
@@ -72,8 +73,6 @@ export const useCurrencyConverter = () => {
         }
     }
 
-
-    
     const min = data ? (([...data].sort((d1, d2) => d1.Rates - d2.Rates))[0].Rates) : 0
 
     const config = {
@@ -82,7 +81,7 @@ export const useCurrencyConverter = () => {
         xField: "date",
         yField: "Rates",
         xAxis: {tickCount: 10},
-        yAxis: {min: min}
+        yAxis: {min: min},
     };
 
 

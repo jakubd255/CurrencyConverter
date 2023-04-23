@@ -70,7 +70,11 @@ const App = () => {
 
             <div className="history-chart">
                 <div className="chart-options">
-                    <Radio.Group value={chart} onChange={updateChart}>
+                    <Radio.Group
+                        value={chart}
+                        onChange={updateChart}
+                        buttonStyle="solid"
+                    >
                         <Radio.Button value="1M">1M</Radio.Button>
                         <Radio.Button value="3M">3M</Radio.Button>
                         <Radio.Button value="6M">6M</Radio.Button>
