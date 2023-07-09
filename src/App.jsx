@@ -28,7 +28,7 @@ const App = () => {
 
             <div className="currencies-row">
                 <div className="currency-card">
-                    <span>Form</span>
+                    <span>From</span>
                     <Select
                         className="currency-choice"
                         options={currencies}
